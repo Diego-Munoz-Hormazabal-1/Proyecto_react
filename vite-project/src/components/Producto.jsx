@@ -1,4 +1,5 @@
 function Producto(props) {
+    console.log(props)
 return (
 <div>
 <h3>{props.emoji}</h3>

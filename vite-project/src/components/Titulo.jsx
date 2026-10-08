@@ -1,6 +1,6 @@
 function Titulo() {
 return (
-<h1>🍔 Food React</h1>
+<h1>🍔 Mi carrito de Diego</h1>
 );
 }
 export default Titulo;
