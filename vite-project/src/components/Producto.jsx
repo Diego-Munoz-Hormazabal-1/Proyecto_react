@@ -1,12 +1,18 @@
-function Producto(props) {
-    console.log(props)
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+function Producto({ nombre,precio,emoji }) {
 return (
-<div>
-<h3>{props.emoji}</h3>
-<h3>{props.nombre}</h3>
-<h3>{props.precio}</h3>
-
-</div>
+<Card style={{ width: "18rem" }}>
+<Card.Body>
+<Card.Title>
+{emoji} {nombre}
+</Card.Title>
+<Card.Text>${precio}</Card.Text>
+<Button variant="primary">
+Agregar al carrito
+</Button>
+</Card.Body>
+</Card>
 );
 }
 export default Producto;
